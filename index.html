@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="google_maps_web">
+  <meta name="google-signin-client_id" content="704765649636-p4dg01416p78hv4jb5j2p66a2ljdtc1u.apps.googleusercontent.com">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+  <title>google_maps_web</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+<!-- The core Firebase JS SDK (always required for using any firebase service) -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<!-- Firebase Auth SDK -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+  apiKey: "AIzaSyCIbaNrR3eDfYE_BCmhFMKqXLdjixOm6rQ",
+  authDomain: "signin-4abdc.firebaseapp.com",
+  projectId: "signin-4abdc",
+  storageBucket: "signin-4abdc.appspot.com",
+  messagingSenderId: "285478325056",
+  appId: "1:285478325056:web:e66b06b41298ebf07fc8a5",
+  measurementId: "G-W7C99QTY2T"
+};
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+<!-- END OF FIREBASE INIT CODE -->
+<!-- This script installs service_worker.js to provide PWA functionality to
+     application. For more information, see:
+     https://developers.google.com/web/fundamentals/primers/service-workers -->
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2820363383');
+      });
+    }
+  </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMyN28Eo0JQbGZejzbGc-T4kdyCKagZnQ"></script>
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+
+</html>
